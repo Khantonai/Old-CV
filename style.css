@@ -1,0 +1,455 @@
+@font-face {
+    font-family: "Montserrat Classic";
+    src: url("fonts/Montserrat-Medium.ttf")
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("fonts/Montserrat-Bold.ttf")
+}
+
+
+@font-face {
+    font-family: "Lora Italic";
+    src: url("fonts/Lora-Italic.ttf")
+}
+
+@font-face {
+    font-family: "Lora BoldItalic";
+    src: url("fonts/Lora-BoldItalic.ttf")
+}
+
+@font-face {
+    font-family: "Lora Bold";
+    src: url("fonts/Lora-Bold.ttf")
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translate(-100%, 0);
+    }
+
+    50% {
+        transform: translate(-100%, -15px);
+    }
+
+}
+
+
+body {
+    font-family: Montserrat Classic;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    left: -8px;
+    color: #1f365c;
+}
+
+header {
+    
+    position: relative;
+    display: flex;
+    height: 19vh;
+}
+
+main {
+    display: flex;
+    
+    height: 78vh;
+}
+
+h4 {
+    margin: 0;
+    font-family: Montserrat Bold;
+    color: #1f365c;
+}
+
+h2,
+h3 {
+    font-size: 2.1vw;
+    color: #ed595c;
+    font-family: Montserrat Bold;
+}
+
+
+
+.blue-square {
+    
+    position: relative;
+    background-color: #1f365c;
+    width: 8.5vh;
+    height: 19vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#block-top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 0.6vh;
+}
+
+#block-top-1 {
+    width: 0;
+    height: 0;
+    border-top: 1.45vh solid transparent;
+    border-bottom: 1.45vh solid transparent;
+    border-right: 2.5vh solid #ed9a9b;
+}
+
+#block-top-2 {
+    width: 0;
+    height: 0;
+    border-bottom: 1.45vh solid transparent;
+    border-top: 1.45vh solid transparent;
+    border-left: 2.5vh solid #ed9a9b;
+}
+
+#block-bottom {
+    
+    display: flex;
+    justify-content: center;
+}
+
+#block-left {
+    position: relative;
+    left: 0.25vh;
+    width: 3vh;
+    height: 2.5vh;
+    
+    background: #ed595c;
+    -webkit-transform: rotate(90deg) skew(-30deg);
+    -moz-transform:  rotate(90deg) skew(-30deg);
+    -o-transform:  rotate(90deg) skew(-30deg);
+    tranform:  rotate(90deg) skew(-30deg);
+}
+
+#block-right {
+    position: relative;
+    right: 0.25vh;
+    width: 3vh;
+    height: 2.5vh;
+    
+    background: #FFFFFF;
+    -webkit-transform: rotate(90deg) skew(30deg);
+    -moz-transform:  rotate(90deg) skew(30deg);
+    -o-transform:  rotate(90deg) skew(30deg);
+    tranform:  rotate(90deg) skew(30deg);
+}
+
+#info-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nom-statut {
+    margin-left: 2vh;
+}
+
+#EM {
+    font-family: Lora Bold;
+    letter-spacing: 2px;
+    font-size: 3.5vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ed595c;
+}
+
+#etudiant {
+    letter-spacing: 2px;
+    font-size: 1.3vh;
+    color: #1f365c;
+}
+
+#img-mask {
+    position: relative;
+    width: 10vh;
+    height: 10.5vh;
+    overflow: hidden;
+    right: 4vh;
+}
+
+#img-mask img {
+    width: 10vh;
+}
+
+.line-header {
+    background-color: #d2d7df; width: 1.8vh;
+    height: 22.5vh; 
+}
+
+.column {
+    display: flex;
+}
+
+.line-left {
+    width: 1.5vh;
+    height: 16vh;
+}
+
+.left {
+    position: relative;
+    top: 13vw;
+    width: 30vw;
+    height: fit-content;
+}
+
+.left section {
+    margin-bottom: 8vw;
+}
+
+.left h4 {
+    font-size: 1.15vw;
+    margin-left: 3vw;
+    color: red;
+}
+
+.left li {
+    font-size: 1.3vw;
+    position: relative;
+    left: -2vw;
+}
+
+.left p {
+    font-size: 1.3vw;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#coordonnees {
+    font-style: normal;
+    position: relative;
+    left: 3.5vw;
+}
+
+#maps {
+    display: none;
+}
+
+.right {
+    position: relative;
+    top: -4vh;
+    margin-left: 9vw;
+}
+
+.right section {
+    margin-bottom: 3vh;
+}
+
+.right h2 {
+    margin-bottom: 0;
+}
+
+.right h4 {
+    font-family: Montserrat Bold;
+    font-size: 1.2vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+i {
+    font-family: Lora Italic;
+    font-size: 1.5vh;
+    letter-spacing: 0.02em;
+}
+
+.right ul {
+    margin-top: 0.5vh;
+    margin-bottom: 0px;
+}
+
+.right li,
+.right p {
+    font-size: 1vh;
+}
+
+.right li {
+    position: relative;
+    left: -25px;
+}
+
+#profil p {
+    font-size: 0.9vh;
+}
+
+/* Chrome, Safari et Opera */
+#scroll::-webkit-scrollbar {
+    display: none;
+}
+
+#scroll {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 70vh;
+    -ms-overflow-style: none;
+    /* IE et Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.nom-entreprise {
+    font-family: Lora BoldItalic;
+}
+
+#credit-mutuelle i {
+    font-size: 1.3vh;
+}
+
+#CM-li li {
+    font-size: 0.8vh;
+}
+
+li + ul {
+    margin-left: -3vh;
+}
+
+#arrow {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -4vh;
+    animation: bounce 2s infinite;
+}
+
+#arrow img {
+    width: 5vh;
+}
+
+.line-right {
+    width: 1.5vh;
+    height: 19.25vh;
+}
+
+
+
+
+@media screen and (max-height:100vw) {
+    h2 {
+        color: green;
+    }
+
+    #img-mask {
+        position: relative;
+        width: 10vw;
+        height: 10.5vw;
+        overflow: hidden;
+        right: 4vw;
+    }
+    
+    #img-mask img {
+        width: 10vw;
+    }
+    
+    .left {
+        position: relative;
+        top: 3vw;
+        width: 30vw;
+        height: fit-content;
+    }
+    
+    .left section {
+        margin-bottom: 3.5vw;
+    }
+    
+    .left h4 {
+        font-size: 1vw;
+        margin-left: 3vw;
+        color: red;
+    }
+    
+    .left li {
+        font-size: 1vw;
+        position: relative;
+        left: 1vw;
+    }
+    
+    .left h2 {
+        font-size: 1.7vw;
+    }
+
+    .left p {
+        font-size: 1.1vw;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    
+    #coordonnees {
+        font-style: normal;
+        position: relative;
+        left: 3.5vw;
+    }
+    
+    .right {
+        position: relative;
+        top: -4vh;
+        margin-left: 5vw;
+    }
+    
+    .right section {
+        margin-bottom: 3vh;
+    }
+    
+    .right h2, .right h3 {
+        margin-bottom: 0;
+        font-size: 1vw;
+    }
+    
+    .right h4 {
+        font-family: Montserrat Bold;
+        font-size: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+    
+    i, #credit-mutuelle i{
+        font-family: Lora Italic;
+        font-size: 0.8vw;
+        letter-spacing: 0.02em;
+    }
+    
+    .right ul {
+        margin-top: 0.5vh;
+        margin-bottom: 0px;
+    }
+    
+    .right li,
+    .right p {
+        font-size: 0.7vw;
+    }
+    
+    .right li {
+        position: relative;
+        left: -25px;
+    }
+    
+    #profil p {
+        font-size: 0.8vw;
+    }
+    
+    
+    
+    #CM-li li {
+        font-size: 0.7vw;
+    }
+    
+    li + ul {
+        margin-left: -2vw;
+    }
+    
+    #arrow {
+        display: block;
+        position: absolute;
+        left: 50%;
+        animation: bounce 2s infinite;
+    }
+    
+    #arrow img {
+        width: 3vw;
+    }
+}
